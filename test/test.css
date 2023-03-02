@@ -1,0 +1,59 @@
+*{
+    font-family: sans-serif;
+    margin:0px;
+}
+
+a[href="/"]{
+    color:darkred;
+}
+
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 2em;
+}
+body{
+    margin:0px auto;
+    display: flex;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    width:100%;
+    background-color: lightblue;
+}
+main{
+    gap:20px;
+    vertical-align: middle  ;
+    background-color: #FFFFFF;
+    border: 3px solid black;
+    max-width: 50ch;    
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+}
+time{
+    font-style: italic;
+}
+#submit-msg{
+
+    margin:20px;
+    
+}
+#submit-msg+p{
+    text-align: center;
+}
+.unsubscribe{
+    color:rgb(0,0,255);
+}
+#user-email{
+    background-color: lightgray;
+    color:#000;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="crud.css">
+    
+</head>
+<body>
+    <button id="create-btn">Create Post</button>
+    <dialog id="dialog">
+        <label for="title">Post Title</label>
+        <input type="text" id="title" name="title" value="Hiking Trails" required>
+        <label for="date">Post Date</label>
+        <input type="date" id="date" name="date" required>
+        <label for="title">Post Summary</label>
+        <input type="text" id="summary" name="summary" value="I went Hiking" required>
+        <button id="confirm-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+    </dialog>
+    <div id="post-container"></div>
+    <script type="module" src="blog.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.stat-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.image{
+    height:100px;
+    width:50px;
+}

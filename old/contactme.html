@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar" id="start">
+            <div class="logo">My Portfolio</div>
+            <div class="navbar-links">
+                <ul>
+                  <li><a href="/index.html">My Profile</a></li>
+                  <li><a href="/hobbies.html">My Hobbies</a></li>
+                  <li><a href="/memes.html">Memes and Videos</a></li>
+                  <li><a href="/contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contents">
+            <h1>Contact Me</h1>
+            <form>
+            <fieldset>
+                <legend>Fill Here</legend>
+                <label for="fname">FULL NAME:</label>
+                <input type="text" id="fname" name="fname" required /><br /><br />
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" required /><br /><br />
+                <label for="favorite-jojo">FAVORITE JOJO</label>
+                <input list="jojos" id="favorite-jojo" name="favorite-jojo"/>
+                <br />
+                <br />
+    
+                <datalist id="jojos">
+                    <option value="Jonathan"></option>
+                    <option value="Joseph"></option>
+                    <option value="Jotaro"></option>
+                    <option value="Josuke"></option>
+                    <option value="Giorno"></option>
+                    <option value="Jolyne"></option>
+                </datalist>
+    
+                <label for="tv">PICK YOUR FAVORITE SERIES OUT OF THIS LIST:</label>
+                <select id="tv">
+                    <optgroup label="Anime">
+                      <option>One Punch Man</option>
+                      <option>Attack On Titan</option>
+                      <option>Jujutsu Kaisen</option>
+                      <option>Record of Ragnarok</option>
+                      <option>Jojo's Bizarre Adventures</option>
+                    </optgroup>
+                    <optgroup label="TV">
+                      <option>Black Mirror</option>
+                      <option>Stranger Things</option>
+                      <option>Wednesday</option>
+                      <option>Loki</option>
+                      <option>Game of Thrones</option>
+                    </optgroup></select
+                  ><br /><br />
+        
+                  <label for="Message">SAY HELLO:</label><br />
+                  <textarea id="Message" name="Message" rows="4" cols="60" required>
+                  </textarea>
+    
+                <br /><br />
+                <button type="button">submit</button>
+            </fieldset>
+            </form>
+        </div>
+        
+      </main>
+      <footer>
+        <hr />
+        <ul>
+          <li>
+            <a href="#">Return to Top</a>
+          </li>
+        </ul>
+      </footer>
+</body>
+</html>

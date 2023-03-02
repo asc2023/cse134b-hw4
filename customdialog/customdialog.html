@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dialog.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button onclick="window.dialog3.showModal();">Alert</button>
+    <button onclick="window.dialog4.showModal();">Confirm</button>
+    <button onclick="window.dialog5.showModal();">Prompt</button>
+    <dialog id="dialog3">
+        <h1>Alert Pressed!</h1>
+        <button id="alert-btn">Ok</button>
+        
+    </dialog>
+    <dialog id="dialog4">
+        <h1>Do you confirm this?</h1>
+        <button id="cancel">Cancel</button>
+        <button id="confirm">Ok</button>
+        
+    </dialog>
+    <dialog id="dialog5">
+        <h1>What is your name?</h1>
+        <input type="text" id="myName" name="fname" value="John Travis">
+        <button id="dialog-btn">Confirm</button>
+    </dialog>
+ 
+    <hr>
+    <output id="output"></output>
+    <script src="customdialog.js" type="module"></script>
+</body>
+</html>

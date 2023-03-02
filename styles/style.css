@@ -1,0 +1,221 @@
+/*
+    Website components:
+    Main display:
+        Navbar:
+            Title: 
+            Links:
+        container:
+            Main Details card:
+            main page: Welcome agent
+            Small Supporting cards:
+    Footer:
+        Back to Top
+*/
+:root{
+    --primary-color:#333;
+    --secondary-color:#666;
+    --custom-font:"Trirong", serif;
+}
+html{
+    background-color: black;
+    background-image:url("assets/images/ background.jpg");
+    height:100%;
+    color:white;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Trirong", serif;
+
+}
+main{
+    background-color: black;
+    background-image:url("/assets/images/background.jpg");
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+body{
+    height:100%;
+    margin:0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.navbar{
+    border-radius: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:white;
+}
+.logo{
+    font-size: 2rem;
+    margin:.5rem;
+}
+.navbar-links ul{
+    font-size:1.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+@media screen and (min-width: 480px) {
+    .contents {
+        border:2px solid red;
+    }
+    .navbar{
+        border:2px solid red;
+    }
+}
+.navbar-links li{
+    border-radius: 15px;
+    list-style: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+#drawpic{
+    border-radius: 15px;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color:white;
+}
+.navbar-links li:hover{
+    background: linear-gradient(to bottom right, red, yellow);
+}
+footer li:hover{
+    background: linear-gradient(to bottom right, red, yellow);
+    border-radius: 15%;
+}
+.contents{
+    display: flex;
+    width:95%;
+    min-width: 0;
+    height:100%;
+    background-color: #333;
+    border-radius: 2%;
+    flex-flow:column wrap;
+    align-items: center;
+}
+.profile-card ul{
+    list-style: none;
+}
+.profile-card ul li{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+}
+.welcome-container{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    border-radius: 4%;
+    background-color: var(--primary-color);
+    justify-content:center;
+    align-items: center;
+    cursor:pointer;
+}
+.welcome-container:hover{
+    animation: flipV 1s linear;
+}
+@keyframes flipV {
+    50%{
+        transform: rotateX(180deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+    
+}
+.profile-card{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    background-color:orange;
+    border-radius: 4%;
+}
+footer{
+    background-color: #333;
+    border-radius: 2%;
+    margin:0;
+    padding:0;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    text-decoration: none;
+    color:white;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+input{
+    border-radius: 15px;
+}
+form{
+    border-radius: 15px;
+}
+fieldset{
+    border-radius: 15px;
+}
+.meme-container{
+    flex-flow:row wrap;
+    display:flex;
+}
+.card{
+    flex-basis: 20%;
+    flex: 1 1 0;
+    width:15%;
+    height:10%;
+    min-width:0;
+    border:1px solid white;
+    border-radius: 15px;
+    margin:0;
+    padding:0;
+}
+.card img{
+    width:auto;
+    height:120px;
+    border-radius: 15px;
+    width:100%;
+}
+.card source{
+    width:auto;
+    height:100px;
+    border-radius: 15px;
+    width:95%;
+}
+button{
+    background:linear-gradient(to bottom right, red, yellow);
+    border-radius:15%;
+    color:white;
+    border:2px solid white;
+}
+fieldset{
+    background: linear-gradient(to bottom right, red, yellow);;
+    box-shadow:5px 10px #000000;
+}
+button:hover{
+    width: 5rem;
+    height:3rem;
+    cursor:pointer;
+    filter:brightness(110%);
+    transform:skewY(20deg);
+    font-size:1rem;
+    border-radius:50%;
+    text-transform:uppercase
+}
+.rickroll{
+    
+}
