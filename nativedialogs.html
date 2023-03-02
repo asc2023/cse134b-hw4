@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4K5099P2W"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'G-K4K5099P2W');
+     </script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +19,18 @@
     <link rel="stylesheet" href="dialog.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="nativedialogs.html">Native Dialog</a></li>
+            <li><a href="nativedialogs.html">Custom Dialog</a></li>
+            <li><a href="styledcrud.html">Blog</a></li>
+        </ul>
+    </nav>
     <h1>Simple Dialogs</h1>
     <button id="alert">Alert</button>
     <button id="confirm">Confirm</button>

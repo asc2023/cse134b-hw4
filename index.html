@@ -10,11 +10,19 @@
 
     gtag('config', 'G-K4K5099P2W');
     </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+        integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+        crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css">   
+    <title>My Portfolio</title>
 </head>
 <body>
     <nav class="navbar">
@@ -22,11 +30,20 @@
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">Comments</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="nativedialogs.html">Native Dialog</a></li>
+            <li><a href="customdialogs.html">Custom Dialog</a></li>
+            <li><a href="styledcrud.html">Blog</a></li>
+            <div class="ais-InstantSearch">
+                <h1>InstantSearch.js </h1>
+              
+                <div class="right-panel">
+                  <div id="searchbox"></div>
+                  <div id="hits"></div>
+                  <div id="pagination"></div>
+                </div>
+              </div>
         </ul>
     </nav>
     <section id="home">
@@ -43,7 +60,9 @@
             <img src="images/Anthony.jpg" alt="profile-pic">
             <div id="intro">
                 <h2>ANTHONY CHEN</h2>
-                <p>I am a fourth year CSE major at UCSD. I </p>
+                <p id="about-me">I am a fourth year CSE major at UCSD. I am a transfer student. I am currently progressing as a frontend or fullstack engineer. I also have interests in 
+                    game development and computer vision.
+                </p>
             </div>
         </div>
     </section>
@@ -63,10 +82,31 @@
         <div class="row">
             <div class="box">
                 <h1 class="headings">Website Design</h1>
-                <p>asdfasdfasdfasdf</p>
+                <p>I am adept at wireframing with figma.</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">Frontend Development</h1>
+                <p>I am experienced with frontend development and various framework and libraries such as React, Angular, and Vue.</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">Backend Development</h1>
+                <p>I have backend experience with node.js, flask, and django.</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">Unity Game Development</h1>
+                <p>I am experienced with making games on Unity.</p>
             </div>
             
         </div>
+    </section>
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="email" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="submit" value="SEND" id="send">
+        </form>
     </section>
 </body>
 </html>
