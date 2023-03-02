@@ -49,9 +49,11 @@
   }
   img{
     filter:brightness(.5);
+    -webkit-filter: invert(100%);
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
     color:rgb(88 199 250 / 100%);
+    -webkit-filter: invert(100%);
   }
   .post {
     background: #191c29;
@@ -60,7 +62,7 @@
     padding: 3px;
     position: relative;
     border-radius: 6px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     display: flex;

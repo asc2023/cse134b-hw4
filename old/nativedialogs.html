@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Editing</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
     <link rel="stylesheet" href="dialog.css">
 </head>
 <body>
@@ -17,7 +16,8 @@
     
     <hr>
     <output id="output"></output>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+
     <script>
         const cleanData = function(userInput) {
             return DOMPurify.sanitize(userInput);

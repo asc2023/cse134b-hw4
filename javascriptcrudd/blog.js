@@ -26,7 +26,9 @@ export const hideDialog = () =>
 {
 window.dialog.close();
 }
-
+export const cleanData = function(userInput) {
+    return DOMPurify.sanitize(userInput);
+};
 
 export const initiateEventListeners = ()=>
 {
@@ -51,11 +53,11 @@ export const renderPost = ()=>{
             <div class ="post">
                 <div class="title-container"> 
                     <h1>${element.title}</h1>
-                </div>
-                
-                <div class="date-container">
+                    <div class="date-container">
                     <time datetime="${element.date}">${element.date}</time>
                 </div>
+                </div>
+                
                 
                 <div class="summary-container"> 
                     <p>${element.summary}</p>
@@ -99,9 +101,9 @@ export const newButtonListeners = () =>{
 
 export function myCreateParsingFunction()
 {
-    let title = document.getElementById("title").value;
-    let date = document.getElementById("date").value;
-    let summary = document.getElementById("summary").value;
+    let title = cleanData(document.getElementById("title").value);
+    let date = cleanData(document.getElementById("date").value);
+    let summary = cleanData(document.getElementById("summary").value);
     console.log(editing);
     console.log(title);
     if(title=="")
@@ -141,9 +143,9 @@ export function editSetup(index)
     let title = document.getElementById("title");
     let date = document.getElementById("date");
     let summary = document.getElementById("summary");
-    title.value = posts[index].title;
-    date.value = posts[index].date;
-    summary.value = posts[index].summary;
+    title.value = cleanData(posts[index].title);
+    date.value = cleanData(posts[index].date);
+    summary.value = cleanData(posts[index].summary);
 }
 export function createSetup(index)
 {
