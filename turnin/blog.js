@@ -62,6 +62,7 @@ export const renderPost = ()=>{
                 <div class="summary-container"> 
                     <p>${element.summary}</p>
                  </div>
+                 
                 <div class="btn-section" style="display:flex;flex-direction:row;">
                     
                     <button class="edit-btn"><img src="../assets/images/edit.png" alt="edit"></img></button>
@@ -75,6 +76,12 @@ export const renderPost = ()=>{
         myContent.innerHTML += showInHtml(post);
     }
     newButtonListeners();
+}
+export const showContent= ()=>
+{
+    var temp = document.getElementsByTagName("template")[0];
+    var clone = temp.content.cloneNode(true);
+    document.body.appendChild(clone);
 }
 export const newButtonListeners = () =>{
     const editButtons = document.querySelectorAll(".edit-btn");

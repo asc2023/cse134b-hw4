@@ -32,7 +32,39 @@
             <li><a href="styledcrud.html">Blog</a></li>
         </ul>
     </nav>
+    
+
+    <template>
+        <div class ="post">
+            <div class="title-container"> 
+                <h1>Template</h1>
+                <div class="date-container">
+                <time datetime="date"></time>
+            </div>
+            </div>
+            
+            
+            <div class="summary-container"> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+             </div>
+             
+            <div class="btn-section" style="display:flex;flex-direction:row;">
+                
+                <button class="edit-btn"><img src="../assets/images/edit.png" alt="edit"></img></button>
+                <button class="delete-btn"><img src="../assets/images/x.png" alt="edit"></img></button>
+            </div>
+        </div>
+    </template>
+
+    <script>
+    function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+        }
+    </script>
     <button id="create-btn">Create Post</button>
+    <button id="show-posts" onclick="showContent()">Create Template</button>
     <dialog id="dialog">
         <label for="title">Post Title</label>
         <input type="text" id="title" name="title" value="Hiking Trails" required>
@@ -44,6 +76,8 @@
         <button id="cancel-btn">Cancel</button>
     </dialog>
     <div id="post-container"></div>
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
 
     <script type="module" src="blog.js">
