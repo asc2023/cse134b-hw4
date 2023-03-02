@@ -1,0 +1,25 @@
+output{
+    border: 5px double black; 
+    width:20%;
+    display:none;
+    min-height:30px;
+    min-width:20px;
+    font-weight: bold;
+}
+#form{
+    border: 10px double black; 
+    width:30%;
+    display:none;
+    min-height:30px;
+    min-width:20px;
+    font-weight: bold;
+}
+dialog::backdrop {
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(128, 0, 255, 0.203),
+      rgba(0, 0, 255, 0.2) 1px,
+      rgba(26, 0, 110, 0.3) 1px,
+      rgba(13, 0, 255, 0.3) 20px
+    );
+  }

@@ -58,11 +58,10 @@ export const renderPost = ()=>{
                 </div>
                 </div>
                 
-                <template>
+                
                 <div class="summary-container"> 
                     <p>${element.summary}</p>
                  </div>
-                 </template>
                 <div class="btn-section" style="display:flex;flex-direction:row;">
                     
                     <button class="edit-btn"><img src="../assets/images/edit.png" alt="edit"></img></button>
