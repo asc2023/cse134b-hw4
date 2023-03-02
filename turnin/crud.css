@@ -16,11 +16,20 @@
   }
   input{
     background-color: #191c29;
+    text-align: left;
+  }
+  #summary{
+    height:40px;
   }
   dialog{
     margin-left:auto;
     margin-right:auto;
     background-color: #191c29;
+  }
+  .dialog-box{
+    display:flex;
+    flex-direction: column;
+    width:20em;
   }
   #create-btn:hover{
     cursor:grab
@@ -31,6 +40,7 @@
     margin:5%;
     wrap:wrap;
   }
+
   :root {
     --card-height: 80vh;
     --card-width: calc(var(--card-height) / 1.5);
@@ -130,4 +140,8 @@
       --rotate: 360deg;
     }
   }
-  
+  .btn-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
